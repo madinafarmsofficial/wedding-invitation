@@ -16,7 +16,10 @@ const weddingData = {
             arabicName: '',
             qualification: 'MBA Systems',
             parents: 'Grandson of Late Mrs. & Mr. Shaik Ahmed',
-            familyDetails: ['Founder, M.S. Beedi Factory'],
+            familyDetails: ['Founder, M.S. Beedi Factory',
+                'Son of Mrs. & Mr. Afzal Ahmed , B.E. (Civil)',
+                
+            ],
         },
     },
 
@@ -38,7 +41,7 @@ const weddingData = {
     invitation: {
         heading: 'Wedding Invitation',
 
-        openingMessage: 'Request the honour of your gracious presence on the occasion of Nikah & Valima Dinner.',
+        openingMessage: 'Mrs. & Mr. Mohammed Khaja Aleemuddin request the honour of your gracious presence on the occasion of Nikah & Valima Dinner.',
 
         bismillah: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
 

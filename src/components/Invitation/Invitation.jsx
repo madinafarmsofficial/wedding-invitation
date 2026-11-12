@@ -108,7 +108,7 @@ function Invitation() {
             {invitation.openingMessage}
           </p>
 
-          <DecorativeDivider />
+          {/* <DecorativeDivider />
 
           <div className="guardians-section invitation-reveal">
             <p className="invitation-small-heading">
@@ -128,7 +128,7 @@ function Invitation() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="couple-section invitation-reveal">
             <CoupleProfile
