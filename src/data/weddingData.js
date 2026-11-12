@@ -1,13 +1,5 @@
 const weddingData = {
     couple: {
-        groom: {
-            name: 'Hafez Akmal Ahmed',
-            arabicName: '',
-            qualification: 'MBA Systems',
-            parents: 'Grandson of Late Mrs. & Mr. Shaik Ahmed',
-            familyDetails: ['Founder, M.S. Beedi Factory'],
-        },
-
         bride: {
             name: 'Aliza Aleem',
             arabicName: '',
@@ -18,18 +10,30 @@ const weddingData = {
                 'Tech Manager at Climate Control Systems',
             ],
         },
+
+        groom: {
+            name: 'Hafez Akmal Ahmed',
+            arabicName: '',
+            qualification: 'MBA Systems',
+            parents: 'Grandson of Late Mrs. & Mr. Shaik Ahmed',
+            familyDetails: ['Founder, M.S. Beedi Factory'],
+        },
     },
 
-    guardians: [{
-            names: 'Mrs. & Mr. Nazeer Ahmed',
-            designation: 'Partner, M.S. Beedi Factory',
-        },
-        {
-            names: 'Mrs. & Mr. Afzal Ahmed',
-            qualification: 'B.E. (Civil)',
-            designation: 'Partner, M.S. Beedi Factory',
-        },
-    ],
+    // guardians: [{
+    //         names: 'Mrs. & Mr. Nazeer Ahmed',
+    //         designation: 'Partner, M.S. Beedi Factory',
+    //     },
+    //     {
+    //         names: 'Mrs. & Mr. Afzal Ahmed',
+    //         qualification: 'B.E. (Civil)',
+    //         designation: 'Partner, M.S. Beedi Factory',
+    //     },
+    // ],
+    guardians:[{
+        names: 'Mrs. & Mr. Mohammed Khaja Aleemuddin',
+        designation:'Tech Manager at Climate Control Systems'
+    }],
 
     invitation: {
         heading: 'Wedding Invitation',
@@ -83,7 +87,7 @@ const weddingData = {
 
         message: 'Your presence and prayers will make our special day even more memorable. We look forward to celebrating this beautiful occasion with you.',
 
-        coupleNames: 'Hafez Akmal Ahmed & Aliza Aleem',
+        coupleNames: 'Aliza Aleem & Hafez Akmal Ahmed',
 
         footerMessage: 'May Allah bless this union with love, happiness and barakah.',
 

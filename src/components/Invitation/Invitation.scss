@@ -168,6 +168,12 @@
     border-radius: 13px;
 }
 
+.guardian-item:only-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: min(100%, 460px);
+}
+
 .guardian-item h3 {
     margin: 0 0 9px;
     color: var(--inv-purple);
@@ -369,6 +375,9 @@
     .guardians-list {
         grid-template-columns: 1fr;
         gap: 14px;
+    }
+    .guardian-item:only-child {
+        width: 100%;
     }
     .couple-section {
         grid-template-columns: 1fr;

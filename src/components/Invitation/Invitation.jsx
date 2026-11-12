@@ -18,6 +18,27 @@ function DecorativeDivider() {
   );
 }
 
+function CoupleProfile({ role, profile, className }) {
+  return (
+    <div className={`couple-profile ${className}`}>
+      <span className="couple-role text-light-gold">{role}</span>
+      <h3 className="text-light-gold">{profile.name}</h3>
+
+      {profile.qualification && (
+        <p className="couple-qualification">{profile.qualification}</p>
+      )}
+
+      <p className="couple-family">{profile.parents}</p>
+
+      {profile.familyDetails?.map((detail) => (
+        <p className="couple-detail" key={detail}>
+          {detail}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 function Invitation() {
   const sectionRef = useRef(null);
 
@@ -110,26 +131,11 @@ function Invitation() {
           </div>
 
           <div className="couple-section invitation-reveal">
-            <div className="couple-profile groom-profile">
-              <span className="couple-role text-light-gold">THE GROOM</span>
-              <h3 className='text-light-gold'>{couple.groom.name}</h3>
-
-              {couple.groom.qualification && (
-                <p className="couple-qualification">
-                  {couple.groom.qualification}
-                </p>
-              )}
-
-              <p className="couple-family">
-                {couple.groom.parents}
-              </p>
-
-              {couple.groom.familyDetails?.map((detail) => (
-                <p className="couple-detail" key={detail}>
-                  {detail}
-                </p>
-              ))}
-            </div>
+            <CoupleProfile
+              role="THE BRIDE"
+              profile={couple.bride}
+              className="bride-profile"
+            />
 
             <div className="couple-ampersand" aria-hidden="true">
               <span />
@@ -137,26 +143,11 @@ function Invitation() {
               <span />
             </div>
 
-            <div className="couple-profile bride-profile">
-              <span className="couple-role text-light-gold">THE BRIDE</span>
-              <h3 className='text-light-gold'>{couple.bride.name}</h3>
-
-              {couple.bride.qualification && (
-                <p className="couple-qualification">
-                  {couple.bride.qualification}
-                </p>
-              )}
-
-              <p className="couple-family">
-                {couple.bride.parents}
-              </p>
-
-              {couple.bride.familyDetails?.map((detail) => (
-                <p className="couple-detail" key={detail}>
-                  {detail}
-                </p>
-              ))}
-            </div>
+            <CoupleProfile
+              role="THE GROOM"
+              profile={couple.groom}
+              className="groom-profile"
+            />
           </div>
 
           <div className="invitation-date-block invitation-reveal">

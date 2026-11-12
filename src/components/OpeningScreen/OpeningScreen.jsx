@@ -2,6 +2,7 @@
 import { useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import weddingData from '../../data/weddingData';
 import './OpeningScreen.scss';
 
 gsap.registerPlugin(useGSAP);
@@ -174,9 +175,9 @@ function OpeningScreen({ onOpenComplete, onStartOpening }) {
           </p>
 
           <div className="opening-couple-names">
-            <span>Hafez Akmal Ahmed</span>
+            <span>{weddingData.couple.bride.name}</span>
             <i>&</i>
-            <span>Aliza Aleem</span>
+            <span>{weddingData.couple.groom.name}</span>
           </div>
 
           <div className="seal-stage">
