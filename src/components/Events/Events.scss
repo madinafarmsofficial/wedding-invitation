@@ -89,7 +89,7 @@
     }
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 15px 35px rgba(49, 12, 53, 0.1);
+        box-shadow: 0 15px 35px rgba($color-deep-purple, 0.1);
     }
 }
 

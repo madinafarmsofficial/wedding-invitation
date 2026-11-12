@@ -1,3 +1,4 @@
+@use '../../styles/abstracts/variables' as *;
 .music-player {
     position: fixed !important;
     right: 28px !important;
@@ -12,9 +13,9 @@
     padding: 0 !important;
     border: 1px solid #d8bd82 !important;
     border-radius: 50% !important;
-    background: linear-gradient( 145deg, #74377a, #4b0750 65%, #310c35) !important;
+    background: linear-gradient( 145deg, #{$color-purple-light}, #{$color-purple} 65%, #{$color-deep-purple}) !important;
     color: #f3dfad !important;
-    box-shadow: 0 6px 20px rgba(49, 12, 53, 0.3), 0 0 15px rgba(181, 150, 90, 0.18), inset 0 1px 3px rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 6px 20px rgba($color-deep-purple, 0.3), 0 0 15px rgba(181, 150, 90, 0.18), inset 0 1px 3px rgba(255, 255, 255, 0.2) !important;
     cursor: pointer !important;
     outline: none !important;
     appearance: none !important;
@@ -22,7 +23,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease !important;
     &:hover {
         transform: translateY(-4px) scale(1.05);
-        box-shadow: 0 10px 25px rgba(49, 12, 53, 0.4), 0 0 22px rgba(181, 150, 90, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.25) !important;
+        box-shadow: 0 10px 25px rgba($color-deep-purple, 0.4), 0 0 22px rgba(181, 150, 90, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.25) !important;
     }
     &:focus-visible {
         outline: 2px solid #d8bd82 !important;
@@ -44,10 +45,10 @@
 @keyframes musicPlayerGlow {
     0%,
     100% {
-        box-shadow: 0 6px 20px rgba(49, 12, 53, 0.3), 0 0 12px rgba(181, 150, 90, 0.15);
+        box-shadow: 0 6px 20px rgba($color-deep-purple, 0.3), 0 0 12px rgba(181, 150, 90, 0.15);
     }
     50% {
-        box-shadow: 0 6px 25px rgba(49, 12, 53, 0.4), 0 0 24px rgba(181, 150, 90, 0.4);
+        box-shadow: 0 6px 25px rgba($color-deep-purple, 0.4), 0 0 24px rgba(181, 150, 90, 0.4);
     }
 }
 
